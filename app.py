@@ -508,7 +508,7 @@ try:
                     "Variação MoM - dessaz %": "{:+.2f}%",
                     "Variação YoY %": "{:+.2f}%",
                     "Acum. 12m %": "{:+.2f}%"
-                }).applymap(lambda x: 'color: green' if x > 0 else 'color: red',
+                }).map(lambda x: 'color: green' if x > 0 else 'color: red',
                             subset=["Variação MoM - dessaz %", "Variação YoY %", "Acum. 12m %"]
                 ).set_properties(**{'text-align': 'center'}),
                 hide_index=True,
